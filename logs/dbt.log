@@ -1,0 +1,46 @@
+[0m18:16:41.848177 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFB566B170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFB58AF620>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFB34AFE60>]}
+
+
+============================== 18:16:41.883314 | 79010dfe-bcd2-4108-8855-219d2d6d3088 ==============================
+[0m18:16:41.883314 [info ] [MainThread]: Running with dbt=1.11.6
+[0m18:16:41.883314 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\HAI\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt init', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m18:16:41.954807 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\HAI\.dbt
+[0m18:17:10.891449 [debug] [MainThread]: Starter project path: D:\Projects\DBT\.venv\Lib\site-packages\dbt\include\starter_project
+[0m18:17:10.913324 [info ] [MainThread]: 
+Your new dbt project "dbt_fundamentals" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:17:10.914321 [info ] [MainThread]: Setting up your profile.
+[0m18:17:14.941889 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m18:17:14.941889 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m18:17:14.941889 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m18:29:14.012541 [info ] [MainThread]: Profile dbt_fundamentals written to C:\Users\HAI\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:29:14.106319 [debug] [MainThread]: Command `dbt init` succeeded at 18:29:14.090114 after 752.37 seconds
+[0m18:29:14.106319 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFB3263290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFD09529C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002AFD094D370>]}
+[0m18:29:14.122148 [debug] [MainThread]: Flushing usage events
+[0m18:29:18.506869 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:25:57.114402 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 21:25:57.178213 | 3c07c6e5-14f5-40a6-922e-03feaf00d97d ==============================
+[0m21:25:57.178213 [info ] [MainThread]: Running with dbt=1.11.6
+[0m21:25:57.178213 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\HAI\\.dbt', 'invocation_command': 'dbt clean', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m21:25:57.178213 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path D:\Projects\DBT\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m21:25:57.178213 [debug] [MainThread]: Command `dbt clean` failed at 21:25:57.178213 after 0.10 seconds
+[0m21:25:57.178213 [debug] [MainThread]: Flushing usage events

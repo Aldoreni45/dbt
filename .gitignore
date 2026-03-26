@@ -1,0 +1,37 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+venv/
+env/
+
+# dbt project files (sensitive & generated)
+profiles.yml
+dbt_fundamentals/profiles.yml
+dbt_fundamentals/target/
+target/
+dbt_packages/
+logs/
+dbt_fundamentals/logs/
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db

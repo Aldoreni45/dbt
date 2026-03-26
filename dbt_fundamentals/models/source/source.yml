@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: my_source
+    database: dbt
+    schema: source
+    tables:
+      - name: dim_customer
+        description: "Raw customer data from source system"
+      - name: dim_date
+        description: "Raw date data from source system"
+      - name: dim_product
+        description: "Raw product data from source system"
+      - name: dim_store
+        description: "Raw store data from source system"
+      - name: fact_sales
+        description: "Raw sales data from source system"
+      - name: fact_returns
+        description: "Raw returns data from source system"
