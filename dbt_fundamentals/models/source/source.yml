@@ -17,3 +17,7 @@ sources:
         description: "Raw sales data from source system"
       - name: fact_returns
         description: "Raw returns data from source system"
+      - name: raw_customer
+        description: "Raw customer data from source system"
+      - name: raw_details
+        

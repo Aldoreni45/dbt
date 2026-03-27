@@ -1,0 +1,10 @@
+snapshots:
+  - name: gold_items
+    description: "Tracks historical subscription status changes over time."
+    relation: ref('curated_layer')
+    config:
+      schema: gold
+      database: dbt
+      unique_key: customer_id
+      strategy: timestamp
+      updated_at: updated_at   

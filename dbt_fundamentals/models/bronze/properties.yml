@@ -33,7 +33,6 @@ models:
       - name: list_price
         data_tests:
           - not_negative
-
   - name: dim_store
     description: "Bronze store table loaded from raw source"
     config:
